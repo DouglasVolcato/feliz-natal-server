@@ -1,4 +1,4 @@
-import express, { Router } from "express";
+import express from "express";
 import cors from "cors";
 import { config } from "dotenv";
 import { MongoDbConnection } from "./src/infra/database/connection/connect";
