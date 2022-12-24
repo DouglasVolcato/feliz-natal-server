@@ -1,13 +1,13 @@
 import express from "express";
 import cors from "cors";
-import { config } from "dotenv";
 import { MongoDbConnection } from "./src/infra/database/connection/connect";
 import { makeMessageFactory } from "./src/main/factories/message-factory";
 import { EnvAdapter } from "./src/utils/envAdapter";
+import { config } from "dotenv";
 
-config();
 MongoDbConnection.connectDb();
 
+config()
 const message = makeMessageFactory();
 const app = express();
 app.use(express.json());
