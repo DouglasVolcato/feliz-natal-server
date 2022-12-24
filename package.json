@@ -3,6 +3,7 @@
   "author": "Douglas Volcato",
   "license": "ISC",
   "scripts": {
+    "tsc": "./node_modules/typescript/bin/tsc",
     "dev": "nodemon ./index.ts",
     "start": "node ./dist/index.js",
     "build": "tsc"
